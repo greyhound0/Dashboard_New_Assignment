@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import Layout from "./components/Layout";
 import ErrorBoundary from "./components/ErrorBoundary";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard_layout/Dashboard";
 import Login from "./pages/Login";
 import Settings from "./pages/Settings";
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     ErrorBoundary,
 
     children: [
-      { index: true, element: <Home /> },
+      // { index: true, element: <Home /> },
       { path: "/dashboard", element: <Dashboard /> },
       { path: "/settings", element: <Settings /> },
       { path: "/team", element: <Team /> },
